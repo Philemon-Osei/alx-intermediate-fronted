@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid and Flexbox Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+            <style>
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="p-4">
+    <header class="bg-blue-500 text-white p-4">
+        <h1 class="text-3xl">Grid and Flexbox Layout</h1>
+    </header>
+
+    <main class="grid grid-col-1 lg:grid-cols-3 gap-4 min-h-screen">
+        <section class="lg:col-span-2 flex">
+            <div class="w-1/2 bg-red-200 p-4">Flexbox Item 1</div>
+            <div class="w-1/2 bg-red-400 p-4">Flexbox Item 2</div>
+        </section>
+        <aside class="bg-green-200 p-4">Sidebar</aside>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-4 mt-4">
+        <p>&copy; 2024 John Doe's Blog</p>
+    </footer>
+    <!-- Image Gallery Section -->
+    <section class="mt-8">
+        <h2 class="text-2xl font-bold">Image Gallery</h2>
+        <div class="grid grid-cols-2 gap-4 mt-4">
+           <div class="aspect-square">
+            <img src="https://www.bing.com/ck/a?!&&p=34b584f20f94eb5cf6fa1d48aa6d770fe286e9bd3658641f8e1fc6f13465024dJmltdHM9MTc2MTg2ODgwMA&ptn=3&ver=2&hsh=4&fclid=3b1c361a-af9b-6fe3-2196-2097aec46e08&u=a1L2ltYWdlcy9zZWFyY2g_cT1hbHgraW1hZ2VzJmlkPUUxMzE5RTU2REQ2MkRFMDA2OENCRkRBNjIwMTlCNDBFOTk3NEQxMEImRk9STT1JUUZSQkE" alt="Image 1" class="w-full h-auto rounded-lg">
+           </div>
+           <div class="aspect-square">  
+            <img src="https://www.bing.com/ck/a?!&&p=11c51e68da95ba56d8dcdf957e8badb71235c4c21d29ed73515ed099b841b5e6JmltdHM9MTc2MTg2ODgwMA&ptn=3&ver=2&hsh=4&fclid=3b1c361a-af9b-6fe3-2196-2097aec46e08&u=a1L2ltYWdlcy9zZWFyY2g_cT1hbHgraW1hZ2VzJmlkPUQ2MTFDMTcyMjFENjczQzI3NDU0NUU4RjZFMjk1OTY2NkJFRUFEMzAmRk9STT1JUUZSQkE" alt="Image 2" class="w-full h-auto rounded-lg">
+        </div>
+           <div class="aspect-square">
+            <img src="https://www.bing.com/ck/a?!&&p=87e5bfe1d438cf1c6bbde7b59425cedef1f380fa100cb524688a3836fa2c4be4JmltdHM9MTc2MTg2ODgwMA&ptn=3&ver=2&hsh=4&fclid=3b1c361a-af9b-6fe3-2196-2097aec46e08&u=a1L2ltYWdlcy9zZWFyY2g_cT1hbHgraW1hZ2VzK2doYW5hJmlkPTdDQTFCNDczQjE5NEVDREUyOTE3RTIwNUExRkExQTI0OEZBNzc3OTgmRk9STT1JUUZSQkE" alt="Image 3" class="w-full h-auto rounded-lg">
+           </div>
+           <div class="aspect-square">
+            <img src="https://www.bing.com/ck/a?!&&p=34b584f20f94eb5cf6fa1d48aa6d770fe286e9bd3658641f8e1fc6f13465024dJmltdHM9MTc2MTg2ODgwMA&ptn=3&ver=2&hsh=4&fclid=3b1c361a-af9b-6fe3-2196-2097aec46e08&u=a1L2ltYWdlcy9zZWFyY2g_cT1hbHgraW1hZ2VzJmlkPUUxMzE5RTU2REQ2MkRFMDA2OENCRkRBNjIwMTlCNDBFOTk3NEQxMEImRk9STT1JUUZSQkE" alt="Image 4" class="w-full h-auto rounded-lg">
+        </div>
+    </section>
+</body>
+</html>
